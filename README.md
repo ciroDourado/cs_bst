@@ -13,10 +13,19 @@ Enfim, quaisquer dúvidas/sugestões sobre uso ou implementação, sintam-se liv
 
 ## Seções
 
-1. [Introdução](https://github.com/ciroDourado/cs_bst#introducao)
+1. [Introdução](https://github.com/ciroDourado/cs_bst#1-introdução)
 2. [Como usar as árvores](https://github.com/ciroDourado/cs_bst#introducao)
 3. [Como criar suas próprias tabelas](https://github.com/ciroDourado/cs_bst#introducao)
 4. [Contribuição e agradecimentos](https://github.com/ciroDourado/cs_bst#introducao)
 
 ## 1. Introdução
-**[Voltar para seções](https://github.com/ciroDourado/cs_bst#secoes)** 
+**[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
+
+## 2. Como usar as árvores
+**[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
+
+## 3. Como criar suas próprias tabelas
+**[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
+
+## 4. Contribuição e agradecimentos
+**[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
