@@ -10,3 +10,13 @@ Eu poderia ter usado apenas Generics? Sim. Eu poderia ter usado alguma outra coi
 Por mais que meu conhecimento em bancos de dados no momento em que escrevo isso (13/04/2021) seja limitado, eu pensei em fazer com que os dados que minhas árvores armazenam se assemelhem à tabelas de BD's, pois a gente nunca irá saber quantos campos cada tabela pode ter, quais serão seus tipos, e etc. Mas alguns detalhes são sempre importantes; citando um deles: qual dado será usado como chave para aquela tabela, a fim de que se possa realizar uma busca apenas comparando aquele campo.
 
 Enfim, quaisquer dúvidas/sugestões sobre uso ou implementação, sintam-se livres para me contatar.
+
+## Seções
+
+1. [Introdução](https://github.com/ciroDourado/cs_bst#introducao)
+2. [Como usar as árvores](https://github.com/ciroDourado/cs_bst#introducao)
+3. [Como criar suas próprias tabelas](https://github.com/ciroDourado/cs_bst#introducao)
+4. [Contribuição e agradecimentos](https://github.com/ciroDourado/cs_bst#introducao)
+
+## 1. Introdução
+**[Voltar para seções](https://github.com/ciroDourado/cs_bst#secoes)** 
