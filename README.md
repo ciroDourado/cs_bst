@@ -1,4 +1,4 @@
-# cs_bst
+# cs_bst (Binary Search Trees in C#)
 Então galerinha, como a descrição e o próprio nome já dizem, esse é um código feito para tentar representar uma árvore binária pra armazenar e buscar itens.
 
 Minha motivação aqui nesse trabalho é justamente aproveitar o melhor de C# para produzir um código limpo, fácil de entender, e que seja extensível a qualquer dado que você queira armazenar.
