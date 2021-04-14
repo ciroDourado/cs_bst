@@ -21,7 +21,7 @@ Eu poderia ter usado apenas Generics? Sim. Eu poderia ter usado alguma outra coi
 
 Por mais que meu conhecimento em bancos de dados no momento em que escrevo isso (13/04/2021) seja limitado, eu pensei em fazer com que os dados que minhas árvores armazenam se assemelhem à tabelas de BD's, pois a gente nunca irá saber quantos campos cada tabela pode ter, quais serão seus tipos, e etc. Mas alguns detalhes são sempre importantes; citando um deles: qual dado será usado como chave para aquela tabela, a fim de que se possa realizar uma busca apenas comparando aquele campo.
 
-Enfim, quaisquer dúvidas/sugestões sobre uso ou implementação, sintam-se livres para me contatar.
+Vale lembrar que todo e qualquer método de busca/percorrer a árvore foi feito usando iteração. Evitei o uso de recursão nas implementações.
 
 **[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
 
@@ -45,6 +45,19 @@ mono [nome_de_seu_executavel]
 **[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
 
 ## 3. Como usar as árvores
+
+Um breve resumo:
+
+| Método    | Parâmetro           | Retorno                                              |
+|-----------|---------------------|------------------------------------------------------| 
+| Inserir   | Instância de Nó*    | Nenhum                                               |
+| Inserir   | Instância de Tabela | Nenhum                                               |
+| EstaVazia | Nenhum              | Verdadeiro ou falso                                  |
+| Contar    | Nenhum              | Número de nós existentes na árvore                   |
+| Buscar    | ID do elemento      | Em caso de sucesso: instância do nó; senão: null     |
+| Remover   | ID do elemento      | Em caso de sucesso: instância da tabela; senão: null |
+
+###### * Certifique-se de que sua instância de nó contenha uma instância de Tabela.
 
 Você pode tomar como referência o arquivo Principal.cs dentro de src/. Eu estive usando ele para testar meu código no período de desenvolvimento.
 Expondo apenas obviedades aqui, toda variável/instância do tipo ArvoreBinaria deve ser inicializada com a sentença new ArvoreBinaria(), ex.:
