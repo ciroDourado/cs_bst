@@ -38,6 +38,18 @@ class NoArvore {
 			this.direita;
 	} // fim Proximo
 
+	public
+	NoArvore Proximo( NoArvore no ) {
+		return this.Proximo(no.ID());
+	} // fim Proximo
+
+	public
+	int TemQuantosFilhos() {
+		var esquerda = Convert.ToInt32(this.HaEsquerda());
+		var direita  = Convert.ToInt32(this.HaDireita() );
+		return esquerda + direita;
+	}  // fim TemQuantosFilhos
+
 
 
 	// metodos padrao para atributo Esquerda

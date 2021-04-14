@@ -120,7 +120,84 @@ class ArvoreBinaria {
 	private
 	Tabela remover( NoArvore no ) {
 
+		switch( no.TemQuantosFilhos() ) {
+			case 0: this.RemoverFolha(no);     break;
+			case 1: this.RemoverPaiDeUm(no);   break;
+			case 2: this.RemoverPaiDeDois(no); break;
+		}
 		return no.Dados();
 	} // fim remover
+
+
+	private
+	void RemoverFolha( NoArvore no ) {
+		if( no == this.raiz ) this.RemoverRaiz();
+		else                  this.removerFolha(no);
+	} // fim RemoverFolha
+
+
+	private
+	void RemoverRaiz() {
+		this.raiz = null;
+	} // fim RemoverRaiz
+
+
+	private
+	void removerFolha( NoArvore no ) {
+		var pai = BuscarPaiDe(no);
+
+		if( pai.Esquerda() == no ) {
+			pai.Esquerda(null);
+		} else pai.Direita(null);
+	} // fim removerFolha
+
+
+	private
+	void RemoverPaiDeUm( NoArvore no ) {
+		if( no == this.raiz ) this.RemoverRaizComUm();
+		else                  this.removerPaiDeUm(no);
+	} // fim RemoverPaiDeUm
+
+
+	private
+	void RemoverRaizComUm() {
+		if( this.raiz.HaEsquerda() )
+			this.raiz  = this.raiz.Esquerda();
+		else this.raiz = this.raiz.Direita();
+	} // fim RemoverRaizComUm
+
+
+	private
+	void removerPaiDeUm( NoArvore no ) {
+		var pai   = BuscarPaiDe(no);
+		var filho = no.HaDireita()?
+			no.Direita():
+		 	no.Esquerda();
+
+		if( pai.Esquerda() == no )
+			pai.Esquerda(filho);
+		else pai.Direita(filho);
+	} // fim removerPaiDeUm
+
+
+	private
+	void RemoverPaiDeDois( NoArvore no ) {
+		// if( no == this.raiz ) this.RemoverRaizComDois();
+		// else                  this.removerPaiDeDois(no);
+	} // fim RemoverPaiDeDois
+
+
+	private
+	NoArvore BuscarPaiDe( NoArvore no ) {
+		var noAtual = this.raiz;
+		var proximo = noAtual.Proximo(no);
+
+		while( proximo != no ) {
+			noAtual = proximo;
+			proximo = noAtual.Proximo(no);
+		}
+		return noAtual;
+	} // fim NoPaiDe
+
 
 } // fim classe ArvoreBinaria
