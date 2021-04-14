@@ -43,9 +43,12 @@ class ArvoreBinaria {
 			this.buscar(elemento);
 	} // fim Buscar
 
+	public
 	Tabela Remover( string elemento ) {
-		// implementar
-		return null;
+		var no = this.Buscar(elemento);
+		return no != null?
+			this.remover(no):
+			null;
 	} // fim Remover, e retornar os dados
 
 
@@ -112,5 +115,12 @@ class ArvoreBinaria {
 		}
 		return noAtual;
 	} // fim buscar
+
+
+	private
+	Tabela remover( NoArvore no ) {
+
+		return no.Dados();
+	} // fim remover
 
 } // fim classe ArvoreBinaria
