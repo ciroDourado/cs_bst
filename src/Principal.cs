@@ -20,10 +20,10 @@ class Principal {
 			clientes.Contar()
 		); // 5 clientes
 
-		var ana = "Ana";
+		var bia = "Bia";
 		Console.WriteLine( "{0} esta cadastrada? {1}",
-			ana,
-			clientes.Buscar(ana) != null? "Sim":"Nao"
+			bia,
+			clientes.Buscar(bia) != null? "Sim":"Nao"
 		); // não foi encontrada
 
 		var ciro = "Ciro";
