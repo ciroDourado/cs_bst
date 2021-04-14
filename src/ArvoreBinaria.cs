@@ -43,6 +43,11 @@ class ArvoreBinaria {
 			this.buscar(elemento);
 	} // fim Buscar
 
+	Tabela Remover( string elemento ) {
+		// implementar
+		return null;
+	} // fim Remover, e retornar os dados
+
 
 
 
