@@ -106,7 +106,7 @@ class Xicara: Tabela {
     }
 }
 ```
-Feito isso, agora você tem sua própria tabela de dados para ser usada na árvore. Com esta string retornada, a função de inserção será responsável por organizar seus nós por ordem alfabética.
+Feito isso, e criando todos os métodos construtores necessários, agora você tem sua própria tabela de dados para ser usada na árvore. Com esta string retornada, a função de inserção será responsável por organizar seus nós por ordem alfabética.
 
 **[Voltar para seções](https://github.com/ciroDourado/cs_bst#seções)** 
 
