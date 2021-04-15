@@ -50,6 +50,14 @@ class NoArvore {
 		return esquerda + direita;
 	}  // fim TemQuantosFilhos
 
+	public
+	NoArvore NoAnterior() {
+		var noAtual = this.esquerda;
+		while( noAtual.HaDireita() )
+			noAtual = noAtual.direita;
+		return noAtual;
+	} // fim NoAnterior
+
 
 
 	// metodos padrao para atributo Esquerda

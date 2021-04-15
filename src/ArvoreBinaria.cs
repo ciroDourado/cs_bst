@@ -181,9 +181,26 @@ class ArvoreBinaria {
 
 
 	private
-	void RemoverPaiDeDois( NoArvore no ) {
-		// if( no == this.raiz ) this.RemoverRaizComDois();
-		// else                  this.removerPaiDeDois(no);
+	void RemoverPaiDeDois( NoArvore removido ) {
+		var noSubstituto    = removido.NoAnterior();
+		var paiNoSubstituto = this.BuscarPaiDe(noSubstituto);
+
+		if( paiNoSubstituto.Esquerda() == noSubstituto ) {
+			paiNoSubstituto.Esquerda(null);
+		} else paiNoSubstituto.Direita(null);
+
+		noSubstituto.Esquerda( removido.Esquerda());
+		noSubstituto.Direita ( removido.Direita ());
+
+		if( removido != this.raiz ) {
+			var paiNoRemovido = this.BuscarPaiDe(removido);
+			if( paiNoRemovido.Esquerda() == removido ) {
+				paiNoRemovido.Esquerda(noSubstituto);
+			} else paiNoRemovido.Direita(noSubstituto);
+		} else this.raiz = noSubstituto;
+
+		removido.Esquerda(null);
+		removido.Direita (null);
 	} // fim RemoverPaiDeDois
 
 

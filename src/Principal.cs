@@ -36,6 +36,17 @@ class Principal {
 			ciro,
 			clientes.Buscar(ciro) != null? "Sim":"Nao"
 		); // não foi encontrado (removido)
+
+		var lara = "Lara";
+		clientes.Remover(lara); // encontrado e removido
+
+		Console.WriteLine( "Clientes cadastrados: {0} ",
+			clientes.Contar()
+		); // 3 clientes
+		Console.WriteLine( "{0} esta cadastrada? {1}",
+			lara,
+			clientes.Buscar(lara) != null? "Sim":"Nao"
+		); // não foi encontrado (removido)
 	} // fim da Main
 
 
