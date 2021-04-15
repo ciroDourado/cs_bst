@@ -28,7 +28,7 @@ Vale lembrar que todo e qualquer método de busca/percorrer a árvore foi feito 
 ## 2. Aplicando em seu código
 
 Usar este "módulo" requer nada mais do que incluir estes arquivos no mesmo diretório de seu projeto.
-Por exemplo: você está colocando seus códigos-fonte em uma pasta específica, inclua os códigos-fonte de ArvoreBinaria, NoArvore e Tabela da minha pasta src/ também.
+Por exemplo: você está colocando seus códigos-fonte em uma pasta específica, então também inclua os códigos-fonte de ArvoreBinaria, NoArvore e Tabela da minha pasta src/.
 
 De resto, apenas o óbvio. Para compilar todos os arquivos deste diretório, pelo terminal faça:
 
