@@ -63,7 +63,7 @@ Um breve resumo:
 
 ###### * Certifique-se de que sua instância de nó contenha uma instância de Tabela.
 
-Você pode tomar como referência o arquivo Principal.cs dentro de src/. Eu estive usando ele para testar meu código no período de desenvolvimento.
+Você pode tomar como referência o arquivo Principal.cs dentro de test/. Eu estive usando ele para testar meu código no período de desenvolvimento.
 Expondo apenas obviedades aqui, toda variável/instância do tipo ArvoreBinaria deve ser inicializada com a sentença new ArvoreBinaria(), ex.:
 
 ```
