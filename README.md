@@ -3,6 +3,10 @@ Então galerinha, como a descrição e o próprio nome já dizem, esse é um có
 
 Minha motivação aqui nesse trabalho é justamente aproveitar o melhor de C# para produzir um código limpo, fácil de entender, e que seja extensível a qualquer dado que você queira armazenar.
 
+###### obs.: esta árvore é apenas uma implementação base para projetos mais complexos. A BST deste repositório não possui métodos para se manter equilibrada, e pode se tornar ineficiente dependendo de como são inseridos novos elementos. Caso precise de uma árvore de busca que se equilibre, sempre com a menor altura possível, dê uma olhada em outro projeto meu que usa esta mesma biblioteca:
+
+[Árvores AVL](https://github.com/ciroDourado/cs_avl)
+
 ## Seções
 
 1. [Introdução](https://github.com/ciroDourado/cs_bst#1-introdução)
