@@ -17,7 +17,7 @@ Minha motivação aqui nesse trabalho é justamente aproveitar o melhor de C# pa
 
 ## 1. Introdução
 
-Como eu disse antes, eu disse que esses dados são genéricos. Porém eu disse isso entre aspas, justamente porque meu conceito de dado genérico não é necessariamente relacionado à TIPOS genéricos, e sim relacionado à uma classe abstrata chamada Tabela. 
+Como eu disse antes, esses dados são genéricos. Porém eu disse isso entre aspas, justamente porque meu conceito de dado genérico não é necessariamente relacionado à TIPOS genéricos, e sim relacionado à uma classe abstrata chamada Tabela. 
 
 Eu poderia ter usado apenas Generics? Sim. Eu poderia ter usado alguma outra coisa? Claro que poderia. Mas minha escolha por usar uma classe-pai foi justamente para forçar a implementação de funções para acessar dados específicos para cada caso de conjunto de dados. E não só por isso, minha árvore não deveria se preocupar em qual tipo específico ela armazenaria um dado: qualquer conjunto de dados que você queira armazenar será visto apenas como uma Table pelo nó/árvore.
 
